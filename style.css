@@ -1,0 +1,15 @@
+#error{
+    display: none;
+    color: red;
+
+}
+input:invalid + #error
+{
+    display: inline;
+}
+form div{
+    margin: 10px 5px;
+}
+p{
+    margin: 2px;
+}

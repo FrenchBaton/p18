@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+            <div>
+                <label for="num">1.Parol</label>
+                <input type="text" name="num" id="num" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%\^&\*])(?!.*\s).{8,20}$"> 
+                <span id="error"> Введите еще раз!</span>
+            </div>
+
+            <div>
+                <label for="login">2.Data</label>
+                <input type="text" name="data" id="data" pattern="^([0-2]\d|3[0-1])\.(0\d|1[0-2])\.20(2[4-9]|[3-9]\d)$">
+                <span id="error"> Введите еще раз!</span>
+            </div>
+
+            <div>
+                <label for="login">3.Name</label>
+                <input type="text" name="log" id="login" pattern="^(?!.*__)[a-zA-Z]\w*[a-zA-Z]$">
+                <span id="error"> Введите еще раз!</span>
+            </div>
+
+            <div>
+                <label for="login">4.Цвет</label>
+                <input type="text" name="log" id="login" pattern="^#([0-9A-F]{3}|[0-9A-F]{6})$">
+                <span id="error"> Введите еще раз!</span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
